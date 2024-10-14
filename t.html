@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body bgcolor="lightgrey">
+    <h2>Task Management</h2>
+    <p style="font-size: 300%;"><h3>This feature enables you to create your own tasklist.Follow the below steps to record your tasks</h3></p>
+    <ol>
+        <li>Give the task title</li>
+        <li>Describe the task</li>
+        <li>Click Create Task and now here's the task into the list!!</li>
+    </ol>
+    <form id="task-form" onsubmit="return createTask()">
+        <input type="text" id="task-title" placeholder="Task Title" required>
+        <textarea id="task-desc" placeholder="Task Description"></textarea>
+        <button type="submit">Create Task</button>
+    </form>
+    <ul id="task-list"></ul>
+
+    <script>
+        function createTask() {
+            
+            const title = document.getElementById('task-title').value;
+            const desc = document.getElementById('task-desc').value;
+            const taskList = document.getElementById('task-list');
+            const li = document.createElement('li');
+            li.textContent = `${title}: ${desc}`;
+            taskList.appendChild(li);
+            return false; 
+        }
+    </script>
+</body>
+</html>

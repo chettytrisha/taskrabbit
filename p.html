@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body bgcolor="lightgrey">
+    <form id="profile-form" onsubmit="return updateProfile()">
+        <h2>Update Profile</h2>
+        <h3>Enter your Username and email:</h3>
+        
+        <input type="text" id="username" placeholder="Username" required>
+        <h3>Upload the file:</h3>
+        <input type="email" id="email" placeholder="Email" required>
+        <br><br>
+        <input type="file" id="profile-pic" accept="image/*">
+        <br>
+        <h3> Update Your Profile:</h3>
+        <button type="submit">Update</button>
+    </form>
+    <script>
+        function updateProfile() {
+          
+            return false; 
+        }
+    </script>
+</body>
+</html>

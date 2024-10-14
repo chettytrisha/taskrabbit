@@ -1,0 +1,26 @@
+body {
+    font-family: 'Times New Roman',Arial, sans-serif;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1{
+    font-family: Times New Roman;
+}
+
